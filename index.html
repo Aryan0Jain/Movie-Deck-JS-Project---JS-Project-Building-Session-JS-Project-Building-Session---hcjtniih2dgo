@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>IMDB</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Movie Deck</a>
+    </header>
+    <div id="search-bar">
+        <input id="search-input" type="text" name="search" placeholder="search by name..." autocomplete="off">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="sorting-options">
+        <button id="sort-by-date">Sort by date (oldest to latest)</button>
+        <button id="sort-by-rating">Sort by rating (least to most)</button>
+    </div>
+    <div class="tabs">
+        <button class="active-tab all-tab">All</button>
+        <button class="favorites-tab">Favorites</button>
+    </div>
+    <div class="movie-list-pagination-btns">
+        <ul id="movies-list">
+            
+        </ul>
+        <div class="pagination">
+            <button id="prev-button" disabled>Previous</button>
+            <button id="page-number-button">Current Page: 1</button>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Movie Deck</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/09259f818e.js" crossorigin="anonymous"></script>
+    <script src="./App.js"></script>
+</body>
+</html>
